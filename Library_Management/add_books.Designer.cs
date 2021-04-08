@@ -1,7 +1,7 @@
 ﻿
 namespace Library_Management
 {
-    partial class add_books
+    partial class Add_Books
     {
         /// <summary>
         /// Required designer variable.

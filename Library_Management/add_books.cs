@@ -11,11 +11,11 @@ using System.Data.SqlClient;
 
 namespace Library_Management
 {
-    public partial class add_books : Form
+    public partial class Add_Books : Form
     {
         SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-SNf3PER;Initial Catalog=library_management;Integrated Security=True;Pooling=False");
 
-        public add_books()
+        public Add_Books()
         {
             InitializeComponent();
         }

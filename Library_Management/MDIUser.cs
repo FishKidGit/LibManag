@@ -106,7 +106,7 @@ namespace Library_Management
 
         private void addToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            add_books ab = new add_books();
+            Add_Books ab = new Add_Books();
             ab.Show();
         }
 
