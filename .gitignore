@@ -1,6 +1,4 @@
 *.suo
-Library_Management\bin
 .vs/Library_Management/v16/.suo
-*.exe
 *.exe
 *.pdb
