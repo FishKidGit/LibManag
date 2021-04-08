@@ -1,5 +1,4 @@
-﻿// Add Student
-
+﻿
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -17,14 +16,14 @@ namespace Library_Management
 {
     public partial class Add_Student_Info : Form
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionLibrary"].ConnectionString);
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString"].ConnectionString);
  
         string wanted_path;
 
         public Add_Student_Info()
         {
             InitializeComponent();
-            clearForm(Controls);
+            ClearForm(Controls);
         }
 
         private void button1_Click(object sender, EventArgs e)
@@ -46,7 +45,7 @@ namespace Library_Management
             
             if (string.IsNullOrEmpty(textBox1.Text.ToString()))
             {
-                MessageBox.Show("You must enter at least a name to add a student.");
+                MessageBox.Show("You must enter a name to add a student.");
                 return;
             }
 
@@ -78,7 +77,7 @@ namespace Library_Management
             {
                 cmd.ExecuteNonQuery();
                 MessageBox.Show("Student added.");
-                clearForm(Controls);
+                ClearForm(Controls);
             }
             catch
             {
@@ -95,7 +94,7 @@ namespace Library_Management
 
         }
 
-        private void clearForm(Control.ControlCollection controls)
+        private void ClearForm(Control.ControlCollection controls)
         {
             ClearTextBoxes(controls);
             openFileDialog1.FileName = "";

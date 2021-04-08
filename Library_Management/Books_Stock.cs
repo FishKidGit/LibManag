@@ -18,7 +18,7 @@ namespace Library_Management
 {
     public partial class Books_Stock : Form
     {
-        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["ConnectionLibrary"].ConnectionString);
+        SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["MyDatabaseConnectionString"].ConnectionString);
              
         public Books_Stock()
         {
